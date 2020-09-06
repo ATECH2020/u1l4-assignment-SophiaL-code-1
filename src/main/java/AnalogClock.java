@@ -12,9 +12,9 @@ class AnalogClock {
         /*
          *  your code goes here
          */
-          int hours = hrHand / 30;
-          int degPast = hours * 30;
-          int minPast = hrHand - degPast;
+          int hours = hrHand / 30; //hours past without remainder
+          int degPast = hours * 30; //deg of integer hours
+          int minPast = hrHand - degPast; //original - integer hr deg
           int minHandDeg = (30 - minPast) * 6;
           System.out.print(minHandDeg);
       
