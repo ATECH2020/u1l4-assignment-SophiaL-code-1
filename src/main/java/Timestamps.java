@@ -18,7 +18,17 @@ class Timestamps {
         /*
          *  your code goes here
          */
+        int bHr = hours1; //renaming to help me understand
+        int aHr = hours2; //a stands for after b stands for before
+        int diffHrs; //difference of hours
+        int bMin = minutes1;
+        int aMin = minutes2;
+        int diffMin; //difference of minutes
+        int bSec = seconds1;
+        int aSec = seconds2:
+        int diffSec; //difference of seconds
 
+        
 
         // closing the scanner object
         scanner.close();
