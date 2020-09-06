@@ -7,11 +7,15 @@ class AnalogClock {
         Scanner scanner = new Scanner(System.in);
 
         //Reads ints from user
-      //This is a test
-
+        //int hrHand = scanner.nextInt();
+        int a;
+        a = 22;
         /*
          *  your code goes here
          */
+          int test = a / 3;
+          System.out.println(test);
+
 
         // closing the scanner object
         scanner.close();
