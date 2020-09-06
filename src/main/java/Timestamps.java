@@ -22,32 +22,27 @@ class Timestamps {
         int aHr = hours2; //a stands for after b stands for before
         int diffHrs; //difference of hours
         
-        int bMin = minutes1;
-        int aMin = minutes2;
+        int bMin = minutes1; //renaming minutes1
+        int aMin = minutes2; //renaming minutes2
         int diffMin; //difference of minutes
         
-        int bSec = seconds1;
-        int aSec = seconds2;
+        int bSec = seconds1; //renaming seconds1
+        int aSec = seconds2; //renaming seconds2
         int diffSec; //difference of seconds
 
-        int hrSec;
-        int minSec;
-        int sec;
+        int hrSec; //holds value for num of seconds in the hours
+        int minSec; //holds value for num of seconds in the min
+        int sec; //holds value for num of seconds in the sec
 
-        diffHrs = Math.abs(bHr - aHr);
-        System.out.println("Hrs diff: " + diffHrs);
-        diffMin = Math.abs(bMin - aMin);
-        System.out.println("Min diff: " + diffMin);
-        diffSec = Math.abs(bSec - aSec);
-        System.out.println("Sec diff: " + diffSec);
+        diffHrs = aHr - bHr;
+        diffMin = aMin - bMin;
+        diffSec = aSec - bSec;
 
         hrSec = diffHrs * 60 * 60;
         minSec = diffMin * 60;
         sec = diffSec;
 
         System.out.print(hrSec + minSec + sec);
-
-
         // closing the scanner object
         scanner.close();
     }
