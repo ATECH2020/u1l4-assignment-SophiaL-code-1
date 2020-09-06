@@ -34,9 +34,12 @@ class Timestamps {
         int minSec;
         int sec;
 
-        diffHrs = bHr - aHr;
-        diffMin = bMin - aMin;
-        diffSec = bSec - aSec;
+        diffHrs = Math.abs(bHr - aHr);
+        System.out.println("Hrs diff: " + diffHrs);
+        diffMin = Math.abs(bMin - aMin);
+        System.out.println("Min diff: " + diffMin);
+        diffSec = Math.abs(bSec - aSec);
+        System.out.println("Sec diff: " + diffSec);
 
         hrSec = diffHrs * 60 * 60;
         minSec = diffMin * 60;
